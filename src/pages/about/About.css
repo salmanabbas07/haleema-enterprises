@@ -1,0 +1,186 @@
+.about-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-hero {
+  padding: var(--section-padding);
+}
+
+.about-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-text {
+  color: var(--dark-text);
+  line-height: 1.8;
+  font-size: 1.0625rem;
+  margin-bottom: 20px;
+}
+
+.about-mission-vision {
+  padding: var(--section-padding);
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.mv-card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+}
+
+.mv-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+}
+
+.mv-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.mv-card h3 {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.mv-card p {
+  color: var(--medium-gray);
+  line-height: 1.7;
+  font-size: 0.9375rem;
+}
+
+.vision-card {
+  border-top: 4px solid var(--primary-red);
+}
+
+.mission-card {
+  border-top: 4px solid var(--primary-blue);
+}
+
+.philosophy-card {
+  border-top: 4px solid var(--green);
+}
+
+.about-philosophy {
+  padding: var(--section-padding);
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.philosophy-card {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  padding: 30px 25px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+}
+
+.philosophy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-red);
+}
+
+.philosophy-card h4 {
+  color: var(--primary-blue);
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+}
+
+.philosophy-card p {
+  color: var(--medium-gray);
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 991px) {
+  .mv-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .mv-card {
+    padding: 35px 25px;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-hero,
+  .about-mission-vision,
+  .about-philosophy {
+    padding: var(--section-padding-mobile);
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .mv-icon {
+    font-size: 2.5rem;
+  }
+
+  .mv-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .philosophy-card {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .mv-card {
+    padding: 30px 20px;
+  }
+
+  .mv-icon {
+    font-size: 2rem;
+  }
+
+  .mv-card h3 {
+    font-size: 1.125rem;
+  }
+
+  .mv-card p {
+    font-size: 0.875rem;
+  }
+
+  .philosophy-card h4 {
+    font-size: 1rem;
+  }
+
+  .philosophy-card p {
+    font-size: 0.8125rem;
+  }
+}

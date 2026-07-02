@@ -1,0 +1,191 @@
+/* Large Desktop (1400px and above) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+}
+
+/* Desktop (1200px to 1399px) */
+@media (max-width: 1399px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Laptop (992px to 1199px) */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+}
+
+/* Tablet (768px to 991px) */
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  /* Hide desktop elements */
+  .desktop-only {
+    display: none !important;
+  }
+
+  /* Show mobile elements */
+  .mobile-only {
+    display: block !important;
+  }
+}
+
+/* Mobile Large (576px to 767px) */
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Mobile (480px to 575px) */
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile (320px to 479px) */
+@media (max-width: 479px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+  }
+
+  .section {
+    padding: 30px 0;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+}
+
+/* Landscape Orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+  .section {
+    padding: 30px 0;
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Adjustments for retina displays if needed */
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

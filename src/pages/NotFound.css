@@ -1,0 +1,125 @@
+.not-found-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.not-found-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, var(--light-gray-bg) 0%, #e8e8e8 100%);
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.error-code {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--primary-red);
+  line-height: 1;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+}
+
+.error-description {
+  font-size: 1.125rem;
+  color: var(--medium-gray);
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.error-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.error-actions a {
+  text-decoration: none;
+}
+
+.error-actions .btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid var(--primary-blue);
+  border-radius: var(--radius-md);
+  background-color: transparent;
+  color: var(--primary-blue);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.back-button:hover {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 767px) {
+  .not-found-section {
+    padding: 60px 20px;
+  }
+
+  .error-code {
+    font-size: 6rem;
+  }
+
+  .error-title {
+    font-size: 2rem;
+  }
+
+  .error-description {
+    font-size: 1rem;
+  }
+
+  .error-actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .error-actions .btn,
+  .back-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .error-code {
+    font-size: 5rem;
+  }
+
+  .error-title {
+    font-size: 1.75rem;
+  }
+
+  .error-description {
+    font-size: 0.9375rem;
+  }
+}
