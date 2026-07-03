@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Container from '../Container'
 import SectionHeading from '../SectionHeading'
 import PrimaryButton from '../PrimaryButton'
-import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
+import ScrollAnimation from '../ScrollAnimation/ScrollAnimation'
 import './AboutSection.css'
 
 const AboutSection = () => {

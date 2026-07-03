@@ -21,7 +21,6 @@ const EnquiryForm = ({ serviceTitle }) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     // Handle form submission
-    console.log('Enquiry submitted:', formData)
     alert('Thank you for your enquiry! We will get back to you soon.')
     setFormData({
       name: '',

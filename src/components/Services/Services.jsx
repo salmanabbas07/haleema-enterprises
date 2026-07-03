@@ -2,16 +2,19 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {
   RiPassportLine,
-  RiBuildingLine,
   RiTicketLine,
   RiGlobalLine,
   RiToolsLine,
+  RiFlightTakeoffLine,
+  // RiMosqueLine,
   RiFileTextLine,
+  RiHeartPulseLine,
+  RiDraftLine,
   RiArrowRightLine,
-} from "react-icons/ri";
+} from 'react-icons/ri'
 import Container from '../Container'
 import SectionHeading from '../SectionHeading'
-import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
+import ScrollAnimation from '../ScrollAnimation/ScrollAnimation'
 import { servicesData } from '../../data/servicesData'
 import './Services.css'
 
@@ -20,12 +23,11 @@ const iconMap = {
   RiTicketLine: RiTicketLine,
   RiGlobalLine: RiGlobalLine,
   RiToolsLine: RiToolsLine,
-  // RiFlightTakeoffLine: RiFlightTakeoffLine,
+  RiFlightTakeoffLine: RiFlightTakeoffLine,
   // RiMosqueLine: RiMosqueLine,
-  RiBuildingLine: RiBuildingLine,
   RiFileTextLine: RiFileTextLine,
-  // RiHeartPulseLine: RiHeartPulseLine,
-  // RiDraftLine: RiDraftLine
+  RiHeartPulseLine: RiHeartPulseLine,
+  RiDraftLine: RiDraftLine
 }
 
 const Services = () => {

@@ -5,7 +5,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import PageBanner from '../../components/PageBanner/PageBanner'
 import Container from '../../components/Container'
 import SectionHeading from '../../components/SectionHeading'
-import ScrollAnimation from '../../components/ScrollAnimation'
+import ScrollAnimation from '../../components/ScrollAnimation/ScrollAnimation'
 import PrimaryButton from '../../components/PrimaryButton'
 import Footer from '../../components/Footer/Footer'
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop'
@@ -31,7 +31,6 @@ const Grievance = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     // Handle form submission
-    console.log('Grievance submitted:', formData)
     alert('Thank you for your feedback. We will review your grievance and get back to you within 7 working days.')
     setFormData({
       name: '',

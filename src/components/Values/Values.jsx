@@ -2,7 +2,7 @@ import React from 'react'
 import { RiShieldCheckLine, RiTeamLine, RiAwardLine, RiGlobalLine } from 'react-icons/ri'
 import Container from '../Container'
 import SectionHeading from '../SectionHeading'
-import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
+import ScrollAnimation from '../ScrollAnimation/ScrollAnimation'
 import './Values.css'
 
 const Values = () => {

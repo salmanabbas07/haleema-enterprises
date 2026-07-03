@@ -3,7 +3,7 @@ import { RiPhoneLine, RiMailLine, RiMapPinLine } from 'react-icons/ri'
 import Container from '../Container'
 import SectionHeading from '../SectionHeading'
 import PrimaryButton from '../PrimaryButton'
-import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
+import ScrollAnimation from '../ScrollAnimation/ScrollAnimation'
 import { contactInfo } from '../../data/servicesData'
 import './CallbackSection.css'
 
@@ -26,7 +26,6 @@ const CallbackSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     // Handle form submission
-    console.log('Callback requested:', formData)
     alert('Thank you! We will call you back shortly.')
     setFormData({
       name: '',

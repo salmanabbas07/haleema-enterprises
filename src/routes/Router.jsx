@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { HelmetProvider } from 'react-helmet-async'
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
+import { HelmetProvider } from 'react-helmet-async'
 import './Router.css'
 
 // Lazy load pages
